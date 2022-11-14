@@ -1,4 +1,4 @@
-# docker-selenium-lambda
+# Object/Class based Selenium for Python example for indexing public video libraries. 
 
 This is minimum demo of headless Chrome and Selenium on Python 3.10.7.  
 
