@@ -104,7 +104,8 @@ def writer(v):
         f.close()
     with open('links.md', "a") as f:
         for key, vals in v.items():
-            f.write(key, vals)
+            x = f'  {key}      {vals}  \n'
+            f.write(x + "\n")
         f.close()
 
 
@@ -118,7 +119,7 @@ def login():
         element = driver.find_element(By.NAME, "login")
         element.send_keys("USERNAMEHERE123")
         element = driver.find_element(By.NAME, "haslo")
-        element.send_keys("PASSWORDHERE123")
+        element.send_keys("PASSWORDHERE")
         element = driver.find_element(By.NAME, "Submit")
         element.click()
 
@@ -145,6 +146,7 @@ class Browser:
 
 # identify elements with tagname <a>
 # traverse list
+
 pw = Browser("https://www.WEBSITEHERE.com/login/", "")
 pw.navigate()
 login()

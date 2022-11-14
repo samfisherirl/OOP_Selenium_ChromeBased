@@ -117,9 +117,9 @@ def login():
     finally:
         time.sleep(0.5)
         element = driver.find_element(By.NAME, "login")
-        element.send_keys("samfisherirl")
+        element.send_keys("USERNAMEHERE123")
         element = driver.find_element(By.NAME, "haslo")
-        element.send_keys("321eagle")
+        element.send_keys("PASSWORDHERE123")
         element = driver.find_element(By.NAME, "Submit")
         element.click()
 
@@ -147,10 +147,10 @@ class Browser:
 # identify elements with tagname <a>
 # traverse list
 
-pw = Browser("https://www.eporner.com/login/", "")
+pw = Browser("https://www.WEBSITEHERE.com/login/", "")
 pw.navigate()
 login()
-vr = Browser("https://www.eporner.com/cat/vr-porn/milf/SORT-top-rated/3/", "video-")
+vr = Browser("https://www.WEBSITEHERE.com/cat/vr-WEBSITEHERE/WEBSITEHERE/SORT-top-rated/3/", "video-")
 vr.navigate()
 array = vr.getlinks()
 val = buildclass(array)

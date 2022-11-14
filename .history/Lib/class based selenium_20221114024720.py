@@ -118,7 +118,7 @@ def login():
         element = driver.find_element(By.NAME, "login")
         element.send_keys("USERNAMEHERE123")
         element = driver.find_element(By.NAME, "haslo")
-        element.send_keys("PASSWORDHERE123")
+        element.send_keys("PASSWORDHERE")
         element = driver.find_element(By.NAME, "Submit")
         element.click()
 
